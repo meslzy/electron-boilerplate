@@ -1,0 +1,56 @@
+{
+  "name": "electron-boilerplate",
+  "version": "1.0.0",
+  "author": {
+    "name": "meslzy",
+    "email": "i@meslzy.com",
+    "url": "https://www.meslzy.com/"
+  },
+  "description": "The best structure to get started for creating an app with Electron and React",
+  "main": "output/main.js",
+  "scripts": {
+    "main": "webpack --env target=main --mode=development && electron .",
+    "render": "webpack serve --env target=render --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.17.29",
+    "@types/react": "^17.0.32",
+    "@types/react-dom": "^17.0.10",
+    "@types/webpack": "^5.28.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.4.0",
+    "electron": "^15.3.0",
+    "electron-builder": "^22.13.1",
+    "esbuild-loader": "^2.16.0",
+    "eslint": "^8.3.0",
+    "eslint-plugin-react": "^7.27.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.1",
+    "typescript": "^4.4.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.64.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meslzy/electron-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meslzy/electron-boilerplate/issues"
+  },
+  "homepage": "https://github.com/meslzy/electron-boilerplate#readme",
+  "license": "MIT"
+}

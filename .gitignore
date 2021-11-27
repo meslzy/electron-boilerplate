@@ -1,0 +1,10 @@
+# ide files
+.idea/
+
+# project folders
+node_modules/
+output/
+
+# project files
+package-lock.json
+yarn.lock

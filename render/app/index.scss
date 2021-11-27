@@ -1,0 +1,54 @@
+#app {
+  height: 100%;
+  width: 100%;
+  padding: 1px;
+
+  header {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+    -webkit-app-region: drag;
+
+    * {
+      -webkit-app-region: no-drag;
+    }
+
+    #title {
+      position: absolute;
+      left: 15px;
+    }
+
+    #control {
+      position: absolute;
+      right: 15px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      width: 45px;
+
+      button {
+        cursor: pointer;
+        background: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  main {
+    height: calc(100% - 50px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
