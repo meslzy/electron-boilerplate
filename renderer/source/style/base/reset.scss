@@ -1,0 +1,44 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  &::placeholder {
+    color: unset;
+  }
+
+  &:where([hidden]) {
+    display: none;
+  }
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+
+  #root {
+    all: inherit;
+  }
+}
+
+main {
+  display: block;
+}
+
+a, button {
+  cursor: revert;
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
