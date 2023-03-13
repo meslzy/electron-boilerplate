@@ -1,0 +1,16 @@
+{
+  "extends": "@meslzy/tsconfig/react",
+  "compilerOptions": {
+    "rootDir": "source",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "jsx": "react"
+  },
+  "include": [
+    "source",
+    "workspace.ts"
+  ],
+  "exclude": [
+    "dist"
+  ]
+}

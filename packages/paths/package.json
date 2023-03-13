@@ -1,0 +1,5 @@
+{
+  "name": "@packages/paths",
+  "main": "source/index.ts",
+  "private": true
+}

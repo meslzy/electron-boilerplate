@@ -1,0 +1,15 @@
+{
+  "extends": "@meslzy/tsconfig",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}

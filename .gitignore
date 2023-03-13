@@ -1,0 +1,18 @@
+# ide
+.idea/
+
+# roserepo
+.rose/
+
+# node
+node_modules/
+
+# package manager
+yarn.lock
+package-lock.json
+
+# bundler
+dist/
+
+# electron-builder
+buildOutput/

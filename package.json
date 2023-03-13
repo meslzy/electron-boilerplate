@@ -1,0 +1,41 @@
+{
+  "name": "electron_boilerplate",
+  "description": "electron monorepo boilerplate",
+  "version": "1.0.0",
+  "author": {
+    "name": "meslzy",
+    "email": "i@meslzy.com"
+  },
+  "main": "electron/main/dist/index.cjs",
+  "type": "module",
+  "scripts": {
+    "dev": "rose run dev",
+    "start": "rose run start",
+    "build": "rose run build",
+    "lint": "rose run lint",
+    "prebuilder": "npm run build",
+    "builder": "ts-node scripts/builder/index.ts"
+  },
+  "devDependencies": {
+    "roserepo": "0.1.4-alpha",
+    "typescript": "^4.9.5",
+    "@meslzy/tsconfig": "0.1.4",
+    "eslint": "^8.36.0",
+    "@meslzy/eslint-config": "0.1.7",
+    "ts-node": "^10.9.1",
+    "electron-builder": "^24.0.0"
+  },
+  "workspaces": [
+    "electron/*",
+    "packages/*",
+    "utils/*"
+  ],
+  "license": "mit",
+  "repository": "github:meslzy/electron-boilerplate",
+  "bugs": {
+    "url": "https://github.com/meslzy/electron-boilerplate/issues",
+    "email": "i@meslzy.com"
+  },
+  "homepage": "https://github.com/meslzy/electron-boilerplate#readme",
+  "private": true
+}
